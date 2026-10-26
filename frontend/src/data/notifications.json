@@ -1,0 +1,38 @@
+[
+  {
+    "id": "NOTIF-1",
+    "timestamp": "10 mins ago",
+    "type": "warning",
+    "title": "Income Discrepancy Flagged",
+    "message": "Applicant Amit Kumar (APP-2026-0875) has ₹22,000 variance between declared and verified income.",
+    "applicationId": "APP-2026-0875",
+    "read": false
+  },
+  {
+    "id": "NOTIF-2",
+    "timestamp": "45 mins ago",
+    "type": "info",
+    "title": "Document Received",
+    "message": "Priya Sharma (APP-2026-0891) Form 16 successfully authenticated via TRACES clearinghouse.",
+    "applicationId": "APP-2026-0891",
+    "read": false
+  },
+  {
+    "id": "NOTIF-3",
+    "timestamp": "2 hours ago",
+    "type": "warning",
+    "title": "Missing Statutory Exhibits",
+    "message": "Neha Verma (APP-2026-0879) missing Q3 GST return for loan assessment.",
+    "applicationId": "APP-2026-0879",
+    "read": false
+  },
+  {
+    "id": "NOTIF-4",
+    "timestamp": "Yesterday",
+    "type": "success",
+    "title": "Audit Event Logged",
+    "message": "Adverse action recorded for Manoj Joshi (APP-2026-0865) per Fair Lending guidelines.",
+    "applicationId": "APP-2026-0865",
+    "read": true
+  }
+]

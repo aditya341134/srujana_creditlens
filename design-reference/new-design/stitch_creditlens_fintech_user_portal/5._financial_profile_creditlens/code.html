@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#757682", "tertiary-container": "#653400", "inverse-on-surface": "#eef0ff", "outline-variant": "#c5c5d3", "on-background": "#131b2e", "on-primary-container": "#90a8ff", "primary": "#00236f", "on-secondary": "#ffffff", "surface-bright": "#faf8ff", "tertiary": "#442100", "primary-fixed-dim": "#b6c4ff", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#6e3900", "secondary": "#006a63", "on-surface-variant": "#444651", "on-secondary-fixed": "#00201d", "inverse-surface": "#283044", "tertiary-fixed-dim": "#ffb77d", "surface-container-highest": "#dae2fd", "surface-container-low": "#f2f3ff", "primary-fixed": "#dce1ff", "surface-container": "#eaedff", "error": "#ba1a1a", "error-container": "#ffdad6", "on-secondary-container": "#006f67", "on-primary-fixed": "#00164e", "on-surface": "#131b2e", "background": "#faf8ff", "on-tertiary-container": "#fc922b", "surface-variant": "#dae2fd", "on-secondary-fixed-variant": "#00504a", "primary-container": "#1e3a8a", "surface-container-high": "#e2e7ff", "secondary-container": "#99efe5", "inverse-primary": "#b6c4ff", "on-error-container": "#93000a", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "tertiary-fixed": "#ffdcc3", "secondary-fixed-dim": "#80d5cb", "surface-dim": "#d2d9f4", "surface": "#faf8ff", "on-primary-fixed-variant": "#264191", "surface-tint": "#4059aa", "on-tertiary-fixed": "#2f1500", "surface-container-lowest": "#ffffff", "secondary-fixed": "#9cf2e8" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "margin": "2rem", "space-xl": "2.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "body-lg": ["Inter"], "label-md": ["Inter"], "display-lg-mobile": ["Inter"], "body-md": ["Inter"], "display-lg": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"], "headline-lg-mobile": ["Inter"], "title-md": ["Inter"], "label-sm": ["Inter"], "metric-xl-mobile": ["Inter"], "title-sm": ["Inter"], "metric-xl": ["Inter"], "headline-md": ["Inter"], "headline-sm": ["Inter"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "metric-xl-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "metric-xl": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md flex flex-col"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-surface-container-lowest text-[18px]">insights</span></div><span class="font-title-md text-title-md font-semibold text-primary tracking-tight">CreditLens</span></div><span class="font-label-sm text-label-sm text-on-surface-variant mt-space-xs uppercase tracking-wider">See Your Credit Clearly</span></div><nav class="flex flex-col gap-space-xs px-space-sm mt-space-sm" data-active-classes="bg-surface-container-high text-primary font-semibold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-title-sm text-title-sm">Dashboard</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="loan-application" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">assignment_add</span><span class="font-title-sm text-title-sm">Loan Application</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-medium">New</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm rounded-lg transition-colors bg-surface-container-high text-primary font-semibold" data-path="financial-profile" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="font-title-sm text-title-sm">Financial Profile</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="my-assessment" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-title-sm text-title-sm">My Assessment</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-medium">Live</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="loan-simulator" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-title-sm text-title-sm">Loan Simulator</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-title-sm text-title-sm">Settings</span></div></a></nav></div><div class="p-space-md m-space-sm rounded-xl bg-surface-container-low flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Security &amp; Audit</span><span class="w-2 h-2 rounded-full bg-secondary"></span></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[15px] text-secondary">lock</span><span class="font-label-sm text-label-sm">256-Bit Encrypted Data</span></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[15px] text-primary">verified_user</span><span class="font-label-sm text-label-sm">FCRA &amp; ECOA Compliant</span></div><div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><a class="hover:text-primary transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[14px]">help</span> Help</a><a class="hover:text-error transition-colors flex items-center gap-1" data-path="login" href="#"><span class="material-symbols-outlined text-[14px]">logout</span> Logout</a></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 z-40 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface-variant">Underwriting Portal</span><span class="text-outline-variant font-label-sm text-label-sm">/</span><span class="font-title-sm text-title-sm font-semibold text-on-surface">Institutional Review</span></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-on-secondary-container font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span>Plaid Active • Oct 24</span></div><div class="relative flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute -top-0.5 -right-0.5 w-2 h-2 bg-error rounded-full"></span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-title-sm text-title-sm text-on-surface font-semibold leading-tight">Elena Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">ID: CL-84091 • <span class="text-secondary font-semibold">Tier A-2 Prime</span></span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface flex-1 px-space-xl py-space-xl"><div class="flex flex-col w-full">
+<!-- Breadcrumbs & Screen Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-space-lg mb-space-lg gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="hover:text-primary transition-colors cursor-pointer">Dashboard</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold">Profile &amp; Financial Records</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Applicant Financial Profile</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Manage your verified income sources, recurring obligations, and banking records for fair algorithmic assessment.
+      </p>
+</div>
+<!-- Top Action Toolbar -->
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors font-title-sm text-title-sm font-semibold flex items-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Edit Profile</span>
+</button>
+<div class="px-space-md py-2 rounded-lg bg-secondary-container text-on-secondary-container font-title-sm text-title-sm font-semibold flex items-center gap-space-xs shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sync Bank Data (Plaid Connected)</span>
+</div>
+</div>
+</div>
+<!-- Quality Assurance & Audit Readiness Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-xl flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-surface-container-lowest flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-md text-title-md text-on-surface">Algorithmic Readiness: 85% Complete</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container">5/6 Milestones</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Institutional assessment model standard: 80% threshold exceeded.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-tertiary-fixed text-on-tertiary-container text-label-sm font-label-sm font-semibold self-start lg:self-center">
+<span class="material-symbols-outlined text-[18px]">error</span>
+<span>1 Document Requires Attention (Supplementary 1099 Tax Form)</span>
+</div>
+</div>
+<!-- Stepped Checkpoint Tracker with Progress Line -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full transition-all duration-700" style="width: 85%;"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-6 gap-space-xs text-on-surface-variant pt-space-xs">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Plaid Bank Sync</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>W-2 Primary Payroll</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Residence Verification</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Tri-Bureau Tradelines</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Identity Cryptocheck</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[16px]">pending</span>
+<span>1099 Schedule C</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 1: Verified Income Streams & Stability Ledger -->
+<section class="flex flex-col gap-space-md mb-space-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-2.5 h-6 rounded bg-primary"></div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Verified Income Streams &amp; Stability Ledger</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Model Calibration: Bi-Weekly Cashflow Affirmation</span>
+</div>
+<!-- Income Bento Grid (3-columns layout) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Card 1: Primary Employment (W-2 Apex Tech Corp) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-secondary"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold">
+                A
+              </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Apex Tech Corp</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Senior Systems Engineer • Full-Time</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Affirmed
+            </span>
+</div>
+<div class="grid grid-cols-2 gap-space-md pt-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Monthly Net Take-Home</span>
+<span class="font-title-md text-title-md font-bold text-on-surface mt-0.5">$5,250.00</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium mt-0.5">Direct Deposit Affirmed</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Annual Gross W-2</span>
+<span class="font-title-md text-title-md font-bold text-on-surface mt-0.5">$88,400.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">The Work Number API</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">history_edu</span>
+<span>Tenure Security: <strong class="text-on-surface">3.5 Yrs (42 Mo)</strong></span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">check</span>
+<span>0 Payroll Gaps</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/60 -mx-space-lg -mb-space-lg px-space-lg py-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Connected via Workday API Protocol</span>
+<span class="text-primary font-semibold cursor-pointer hover:underline flex items-center gap-0.5">
+            Audit Raw Logs <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</span>
+</div>
+</div>
+<!-- Card 2: Secondary Income (Freelance Tech Consulting) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-tertiary"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Freelance Tech Consulting</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Contract &amp; Advisory Retainers</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span> Unconfirmed
+            </span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-baseline justify-between mt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Declared Monthly Net</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">$1,200.00</span>
+</div>
+<div class="text-right flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-error font-medium">-50% Haircut Applied</span>
+<span class="font-title-sm text-title-sm text-on-surface-variant font-semibold">$600 Model Credit</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Upload your 2023/2024 Schedule C or 1099-NEC statements to eliminate algorithmic discount and unlock full underwriting valuation.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-xs mt-space-md">
+<button class="flex-1 py-2 px-space-sm rounded-lg bg-primary text-on-primary font-title-sm text-title-sm font-semibold hover:bg-primary-container transition-colors flex items-center justify-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">upload_file</span>
+<span>Upload 1099 Form</span>
+</button>
+<button class="py-2 px-space-sm rounded-lg bg-surface-container text-on-surface font-title-sm text-title-sm font-medium hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span>Bank Alternative</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Income Stability Index & Rhythm Chart -->
+<div class="lg:col-span-3 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Stability Index</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">troubleshoot</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-metric-xl text-metric-xl text-primary font-bold tracking-tight">92</span>
+<span class="font-title-md text-title-md text-on-surface-variant font-medium">/ 100</span>
+<span class="ml-auto font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-semibold">Tier A+</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Top decile cadence stability across 52 cycles.</span>
+<!-- Inline SVG Deposit Rhythm Chart -->
+<div class="mt-space-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">24-Mo Bi-Weekly Direct Deposit Rhythm</span>
+<div class="w-full h-14 bg-surface-container-low rounded-lg p-2 flex items-end">
+<svg class="w-full h-full text-secondary" fill="none" preserveaspectratio="none" viewbox="0 0 200 40">
+<line stroke="currentColor" stroke-opacity="0.15" stroke-width="1" x1="0" x2="200" y1="38" y2="38"></line>
+<path d="M 0,25 Q 10,25 15,10 T 30,25 T 45,10 T 60,25 T 75,10 T 90,25 T 105,10 T 120,25 T 135,10 T 150,25 T 165,10 T 180,25 T 195,10 L 200,25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<circle cx="15" cy="10" fill="currentColor" r="2.5"></circle>
+<circle cx="45" cy="10" fill="currentColor" r="2.5"></circle>
+<circle cx="75" cy="10" fill="currentColor" r="2.5"></circle>
+<circle cx="105" cy="10" fill="currentColor" r="2.5"></circle>
+<circle cx="135" cy="10" fill="currentColor" r="2.5"></circle>
+<circle cx="165" cy="10" fill="currentColor" r="2.5"></circle>
+<circle cx="195" cy="10" fill="currentColor" r="2.5"></circle>
+</svg>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant text-[10px]">
+<span>Nov 2022</span>
+<span>100% Cadence Affirmation</span>
+<span>Oct 2024</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm flex items-center justify-between bg-surface-container rounded-lg p-space-sm">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Aggregate Net:</span>
+<span class="font-title-md text-title-md text-primary font-bold">$6,450.00 / mo</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Itemized Living Expenses vs Disposable Cashflow Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Section 2 Container: Monthly Living Expenses -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-2.5 h-6 rounded bg-primary-container"></div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Monthly Living Expenses</h2>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">$3,820 / mo</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Plaid transaction categorization normalized over the last 180 billing cycles.
+        </p>
+<!-- Itemized Rows -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">home</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Housing &amp; Mortgage / Rent</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Primary Residence (Escrow inc.)</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">$2,100.00</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">54.9% of living</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Utilities &amp; Telecom</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Power, Water, Fiber, Mobile</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">$420.00</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">10.9% of living</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Essential Subsistence</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Groceries, Fuel, Healthcare</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">$800.00</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">20.9% of living</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">local_cafe</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Discretionary Living</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dining, Streaming &amp; Leisures</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">$500.00</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">13.1% of living</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Living cost breakdown gauge -->
+<div class="mt-space-md pt-space-sm">
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 55%;" title="Housing: 55%"></div>
+<div class="bg-primary-container h-full" style="width: 11%;" title="Utilities: 11%"></div>
+<div class="bg-secondary h-full" style="width: 21%;" title="Groceries: 21%"></div>
+<div class="bg-outline-variant h-full" style="width: 13%;" title="Discretionary: 13%"></div>
+</div>
+</div>
+</div>
+<!-- Section 3 Summary & Tradelines Breakdown -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-2.5 h-6 rounded bg-secondary"></div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Existing Liabilities &amp; Repayment History</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Aggregate Obligations:</span>
+<span class="font-title-sm text-title-sm font-bold text-on-surface">$780.00 / mo</span>
+</div>
+</div>
+<!-- Tradeline Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Tradeline 1 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">directions_car</span>
+</div>
+<span class="px-2 py-0.2 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">24/24 Clean</span>
+</div>
+<div>
+<span class="font-title-sm text-title-sm font-semibold text-on-surface block">Cascade Auto Finance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Installment Note</span>
+</div>
+<div class="flex justify-between items-baseline pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Monthly</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">$380</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Balance</span>
+<span class="font-title-sm text-title-sm font-semibold text-on-surface-variant">$8,240</span>
+</div>
+</div>
+</div>
+<!-- Tradeline 2 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</div>
+<span class="px-2 py-0.2 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Current</span>
+</div>
+<div>
+<span class="font-title-sm text-title-sm font-semibold text-on-surface block">Federal Direct Student</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Student Loan #4</span>
+</div>
+<div class="flex justify-between items-baseline pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Monthly</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">$400</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Balance</span>
+<span class="font-title-sm text-title-sm font-semibold text-on-surface-variant">$14,500</span>
+</div>
+</div>
+</div>
+<!-- Tradeline 3 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+</div>
+<span class="px-2 py-0.2 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">9.4% Util</span>
+</div>
+<div>
+<span class="font-title-sm text-title-sm font-semibold text-on-surface block">3 Revolving Cards</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Limit $15,000</span>
+</div>
+<div class="flex justify-between items-baseline pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Balance</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">$1,410</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Status</span>
+<span class="font-title-sm text-title-sm font-semibold text-secondary">Optimal</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Continuous Repayment Integrity Heat Strip -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm font-semibold text-on-surface">Tradeline Repayment Timeline Verification</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span> 72 of 72 Consecutive On-Time Entries
+            </span>
+</div>
+<!-- 36 two-month blocks visualization -->
+<div class="grid grid-cols-12 sm:grid-cols-24 lg:grid-cols-36 gap-1 pt-1">
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+<div class="h-3 rounded-sm bg-secondary" title="Cycle Affirmation Pass"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant text-[11px] pt-1">
+<span>Oct 2021 (Start of audited tradeline window)</span>
+<span>Zero 30/60/90-Day Delinquencies</span>
+<span>Present Day</span>
+</div>
+</div>
+</div>
+<!-- DTI & Cash Surplus Metric Callout -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-md mt-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider font-semibold">Underwritten DTI Ratio</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">12.1%</span>
+</div>
+<div class="text-right">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Prime Safe (&lt;36%)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">$780 / $6,450 base</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider font-semibold">Disposable Cash Surplus</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">+$1,850.00</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-bold">Unencumbered</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Post living &amp; debts</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Global Actions & Statutory Legal Footer -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">calculate</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm font-semibold text-on-surface">Affordability Stress Model v4.8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Last executed: Today at 09:41 EST via automated bureau pipe.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface font-title-sm text-title-sm font-semibold flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+<span>Re-calculate Affordability Surplus</span>
+</button>
+<button class="flex-1 sm:flex-none px-space-lg py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary transition-colors font-title-sm text-title-sm font-semibold flex items-center justify-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Profile Changes</span>
+</button>
+</div>
+</div>
+<div class="pt-space-sm bg-surface-container-low rounded-lg p-space-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant flex-shrink-0 mt-0.5">gavel</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong>Statutory Compliance &amp; Consumer Protection Notice:</strong> In accordance with the Fair Credit Reporting Act (15 U.S.C. § 1681) and Equal Credit Opportunity Act (12 CFR Part 1002), all financial entries synchronized via open-banking APIs or W-2/1099 verifications are mirrored into your permanent institutional underwriting file. You hold the legal right to challenge any algorithmic haircut or tradeline discrepancy through an impartial manual credit officer audit within 60 calendar days of initial calculation.
+      </p>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-md"><div class="w-full px-space-xl flex flex-col md:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 CreditLens Financial Technologies Inc. Equal Housing Opportunity. All decisions comply with the Fair Credit Reporting Act (15 U.S.C. § 1681) and Equal Credit Opportunity Act (12 CFR Part 1002).</p><div class="flex items-center gap-space-md"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">FCRA Disclosures</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Model Explainability Statement</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></div></div></footer></div></body></html>

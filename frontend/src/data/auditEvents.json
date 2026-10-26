@@ -1,0 +1,56 @@
+[
+  {
+    "id": "AUD-501",
+    "timestamp": "2026-10-24 16:30",
+    "applicationId": "APP-2026-0870",
+    "user": "David Vance (Senior Underwriter #301)",
+    "eventType": "Scenario Comparison Performed",
+    "description": "Counterfactual loan structuring simulated: ₹6,00,000 principal at 12.5% for 36 months yielding affordable ₹20,070 EMI (DSCR 1.35x).",
+    "changedValues": { "originalAmount": 1200000, "simulatedAmount": 600000, "simulatedEMI": 20070 }
+  },
+  {
+    "id": "AUD-502",
+    "timestamp": "2026-10-24 14:00",
+    "applicationId": "APP-2026-0879",
+    "user": "David Vance (Senior Underwriter #301)",
+    "eventType": "Evidence Status Updated",
+    "description": "Marked Business Inflows as 'Cross-Check Required' due to missing Q3 GST filings and ITR acknowledgement.",
+    "changedValues": { "evidenceStatus": "Cross-Check Required", "completenessPct": 45 }
+  },
+  {
+    "id": "AUD-503",
+    "timestamp": "2026-10-24 11:20",
+    "applicationId": "APP-2026-0891",
+    "user": "David Vance (Senior Underwriter #301)",
+    "eventType": "Assessment Generated",
+    "description": "Automated pre-assessment model generated Tier 1 explainable rating (DSCR 2.15x, DTI 14.6%).",
+    "changedValues": { "modelTier": "Tier 1", "confidencePct": 94 }
+  },
+  {
+    "id": "AUD-504",
+    "timestamp": "2026-10-23 15:10",
+    "applicationId": "APP-2026-0875",
+    "user": "David Vance (Senior Underwriter #301)",
+    "eventType": "Clarification Requested",
+    "description": "Discrepancy notice issued to Amit Kumar regarding ₹22,000 variance between self-reported ₹70,000 salary and verified ₹48,000 salary credits.",
+    "changedValues": { "discrepancy": -22000, "status": "Clarification Required" }
+  },
+  {
+    "id": "AUD-505",
+    "timestamp": "2026-10-23 10:15",
+    "applicationId": "APP-2026-0894",
+    "user": "David Vance (Senior Underwriter #301)",
+    "eventType": "Review Action Completed",
+    "description": "Completed seasonal cashflow sensitivity analysis. 36-month tenure recommended to preserve minimum ₹8,400 monthly cushion.",
+    "changedValues": { "actionId": "ACT-304", "status": "Completed" }
+  },
+  {
+    "id": "AUD-506",
+    "timestamp": "2026-10-16 11:45",
+    "applicationId": "APP-2026-0865",
+    "user": "E. Thorne (Senior Underwriter #109)",
+    "eventType": "Decision Recorded",
+    "description": "Adverse action recorded: Application Rejected due to net monthly cash deficit (-₹9,000/mo) and compounding insolvency risk.",
+    "changedValues": { "decision": "Rejected", "dti": 63.8, "deficit": -9000 }
+  }
+]

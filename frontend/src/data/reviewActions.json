@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ACT-301",
+    "applicationId": "APP-2026-0875",
+    "applicantName": "Amit Kumar",
+    "priority": "High",
+    "reason": "Declared gross salary (₹70,000) exceeds verifiable bank account credits (₹48,000) by ₹22,000.",
+    "relatedFinding": "Cashflow Discrepancy & 0.76x DSCR",
+    "suggestedAction": "Send Document Clarification Request to applicant for FY26 employer bonus annexure or variable incentive payout schedule.",
+    "status": "Awaiting Information",
+    "notes": "Clarification email dispatched 23 Oct. Follow-up reminder scheduled."
+  },
+  {
+    "id": "ACT-302",
+    "applicationId": "APP-2026-0879",
+    "applicantName": "Neha Verma",
+    "priority": "High",
+    "reason": "Missing statutory Q3 GST return and FY25 ITR computation statement.",
+    "relatedFinding": "Evidence Completeness Deficit (45%)",
+    "suggestedAction": "Request missing 3 months of bank statements and chartered accountant certified GST summaries.",
+    "status": "Pending",
+    "notes": "Action pending underwriter dispatch."
+  },
+  {
+    "id": "ACT-303",
+    "applicationId": "APP-2026-0870",
+    "applicantName": "Sunita Rao",
+    "priority": "Medium",
+    "reason": "Requested loan of ₹12,00,000 causes monthly deficit, but ₹6,00,000 loan creates a healthy 1.35x DSCR.",
+    "relatedFinding": "Affordability Deficit at 100% Principal",
+    "suggestedAction": "Prepare counterfactual loan offer of ₹6,00,000 over 36 months and review diagnostic equipment vendor co-financing option.",
+    "status": "Completed",
+    "notes": "Alternative scenario modeled in Scenario Comparison tool."
+  },
+  {
+    "id": "ACT-304",
+    "applicationId": "APP-2026-0894",
+    "applicantName": "Rajesh Patel",
+    "priority": "Medium",
+    "reason": "Lean summer months show reduced cash surplus of ₹35,000 vs 24-month EMI of ₹37,659.",
+    "relatedFinding": "Seasonal Revenue Concentration",
+    "suggestedAction": "Restructure loan tenure from 24 months to 36 months to reduce EMI from ₹37,659 to ₹26,571.",
+    "status": "Completed",
+    "notes": "Tenure extension scenario validated."
+  },
+  {
+    "id": "ACT-305",
+    "applicationId": "APP-2026-0882",
+    "applicantName": "Vikram Malhotra",
+    "priority": "High",
+    "reason": "DTI of 57.5% prevents new debt addition unless existing high-interest revolving lines are retired.",
+    "relatedFinding": "Excessive Debt Leverage (₹36,000/mo)",
+    "suggestedAction": "Issue approval subject to mandatory Direct Creditor Payoff covenant (bank directly settles credit card balances).",
+    "status": "Pending",
+    "notes": "Reviewing creditor balance statements."
+  },
+  {
+    "id": "ACT-306",
+    "applicationId": "APP-2026-0887",
+    "applicantName": "Ananya Das",
+    "priority": "Low",
+    "reason": "Thin bureau file (only 1 tradeline) creates model uncertainty.",
+    "relatedFinding": "Limited Credit Bureau History",
+    "suggestedAction": "Apply Fair Lending Neutrality check: Confirm zero missed payments and verified client retainer contracts.",
+    "status": "Completed",
+    "notes": "Fairness check passed. Thin file not penalized."
+  }
+]

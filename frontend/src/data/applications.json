@@ -1,0 +1,544 @@
+[
+  {
+    "id": "APP-2026-0891",
+    "applicantName": "Priya Sharma",
+    "applicantInitials": "PS",
+    "applicantType": "Salaried Professional (IT Senior Lead)",
+    "requestedAmount": 500000,
+    "annualInterestRate": 10.5,
+    "purpose": "Home Improvement & Solar Installation",
+    "tenureMonths": 36,
+    "submissionDate": "2026-10-22",
+    "lastUpdated": "2026-10-24 11:20",
+    "status": "Ready for Review",
+    "reviewStatus": "Ready for Review",
+    "evidenceCompleteness": "High (94%)",
+    "assignedReviewer": "David Vance (Senior Underwriter)",
+    "profileArchetype": "Salaried borrower with stable income",
+    "financials": {
+      "grossMonthlyIncome": 95000,
+      "netMonthlyInflow": 82000,
+      "monthlyLivingExpenses": 35000,
+      "existingDebtObligations": 12000,
+      "calculatedDti": 14.6,
+      "netDiscretionaryCashflow": 35000,
+      "debtServiceCoverageRatio": 2.15,
+      "liquidReserves": 450000
+    },
+    "employment": {
+      "type": "Permanent Full-Time (Principal Systems Architect)",
+      "employerOrBusiness": "Tata Consultancy Services (TCS) Ltd.",
+      "industrySector": "IT & Cloud Infrastructure",
+      "vintageYears": 7.5,
+      "verificationStatus": "Automated payroll credit verified via Form 16 & salary slip"
+    },
+    "creditHistory": {
+      "bureauBand": "Excellent (782)",
+      "onTimePaymentPct": 99.4,
+      "delinquencies24m": 0,
+      "revolvingUtilizationPct": 14.2,
+      "activeCreditLines": 4,
+      "oldestAccountAgeYears": 9
+    },
+    "assessment": {
+      "modelTier": "Tier 1 — High Probability of Repayment",
+      "repaymentCapacity": "Strong: Net monthly discretionary surplus of ₹35,000 exceeds proposed EMI of ₹16,252 by 2.15x.",
+      "riskIndicators": "Low: Long employment vintage (7.5 yrs) with premier IT employer. Existing debt absorbs only 14.6% of gross income.",
+      "evidenceCompleteness": "Complete: Form 16, 6-month bank statement with direct salary credits, and KYC Aadhaar/PAN verified.",
+      "assessmentUncertainty": "Minimal: Fully documented corporate payroll profile.",
+      "positiveFactors": [
+        {
+          "title": "Substantial Surplus Coverage (2.15x DSCR)",
+          "detail": "Net monthly surplus of ₹35,000 easily accommodates the proposed ₹16,252 EMI.",
+          "impact": "Positive"
+        },
+        {
+          "title": "Clean Repayment Track Record",
+          "detail": "99.4% on-time payment record across 4 existing tradelines with zero 30-day delinquencies.",
+          "impact": "Positive"
+        }
+      ],
+      "riskFactors": [
+        {
+          "title": "Unsecured Personal Lending Facility",
+          "detail": "Facility requested without collateral pledge; mitigated by ample liquid reserves.",
+          "severity": "Low"
+        }
+      ],
+      "plainLanguageExplanation": "Priya demonstrates exceptional financial solvency. With verifiable IT salary credits of ₹82,000/month and existing debt of just ₹12,000, she has ₹35,000 in monthly buffer to service the proposed ₹16,252 installment."
+    },
+    "decisionHistory": null
+  },
+  {
+    "id": "APP-2026-0894",
+    "applicantName": "Rajesh Patel",
+    "applicantInitials": "RP",
+    "applicantType": "Self-Employed Retail Trader",
+    "requestedAmount": 800000,
+    "annualInterestRate": 12.0,
+    "purpose": "Textile Inventory & Festive Working Capital",
+    "tenureMonths": 24,
+    "submissionDate": "2026-10-21",
+    "lastUpdated": "2026-10-24 10:15",
+    "status": "Verification Required",
+    "reviewStatus": "Verification Required",
+    "evidenceCompleteness": "Moderate (68%)",
+    "assignedReviewer": "David Vance (Senior Underwriter)",
+    "profileArchetype": "Small business owner with irregular or seasonal income",
+    "financials": {
+      "grossMonthlyIncome": 130000,
+      "netMonthlyInflow": 98000,
+      "monthlyLivingExpenses": 45000,
+      "existingDebtObligations": 18000,
+      "calculatedDti": 27.8,
+      "netDiscretionaryCashflow": 35000,
+      "debtServiceCoverageRatio": 0.93,
+      "liquidReserves": 280000
+    },
+    "employment": {
+      "type": "Registered Sole Proprietorship",
+      "employerOrBusiness": "Patel Silk & Textile Emporium",
+      "industrySector": "Apparel & Retail Trade",
+      "vintageYears": 5.2,
+      "verificationStatus": "GST returns verified; seasonal revenue spikes between Oct-Jan"
+    },
+    "creditHistory": {
+      "bureauBand": "Good (724)",
+      "onTimePaymentPct": 96.8,
+      "delinquencies24m": 0,
+      "revolvingUtilizationPct": 38.5,
+      "activeCreditLines": 5,
+      "oldestAccountAgeYears": 6
+    },
+    "assessment": {
+      "modelTier": "Tier 2 — Conditional Approval / Seasonal Adjustment Recommended",
+      "repaymentCapacity": "Moderate: Off-season monthly surplus of ₹35,000 is tighter than proposed ₹37,659 EMI (0.93x DSCR), but festival quarter cashflows exceed ₹70,000/mo.",
+      "riskIndicators": "Seasonal Cashflow Fluctuations: 60% of annual revenue concentrated in Q3/Q4 festive sales.",
+      "evidenceCompleteness": "Partial: 12-month GST filing provided, but Q2 audited P&L statement awaits chartered accountant sign-off.",
+      "assessmentUncertainty": "High: Standard linear model underestimates off-season cashflow pinch; structuring as 36-month loan reduces EMI to ₹26,571.",
+      "positiveFactors": [
+        {
+          "title": "Seasoned Business Vintage (5+ Years)",
+          "detail": "Established retail storefront in central commercial bazaar with consistent supplier accounts.",
+          "impact": "Positive"
+        }
+      ],
+      "riskFactors": [
+        {
+          "title": "Off-Season EMI Coverage Deficit",
+          "detail": "The requested 24-month EMI of ₹37,659 slightly exceeds lean summer surplus of ₹35,000.",
+          "severity": "Moderate"
+        }
+      ],
+      "plainLanguageExplanation": "Rajesh has a profitable textile store, but his revenues are seasonal. While festival months bring large surpluses, summer months produce tighter cashflow. Extending the term from 24 to 36 months would lower the EMI to an easily affordable ₹26,571."
+    },
+    "decisionHistory": null
+  },
+  {
+    "id": "APP-2026-0887",
+    "applicantName": "Ananya Das",
+    "applicantInitials": "AD",
+    "applicantType": "Freelance Creative Designer",
+    "requestedAmount": 150000,
+    "annualInterestRate": 11.5,
+    "purpose": "High-Performance Workstation & Software Tools",
+    "tenureMonths": 18,
+    "submissionDate": "2026-10-23",
+    "lastUpdated": "2026-10-24 09:40",
+    "status": "Pending Review",
+    "reviewStatus": "Pending Review",
+    "evidenceCompleteness": "Moderate (62%)",
+    "assignedReviewer": "David Vance (Senior Underwriter)",
+    "profileArchetype": "Borrower with limited credit history",
+    "financials": {
+      "grossMonthlyIncome": 52000,
+      "netMonthlyInflow": 46000,
+      "monthlyLivingExpenses": 24000,
+      "existingDebtObligations": 0,
+      "calculatedDti": 17.5,
+      "netDiscretionaryCashflow": 22000,
+      "debtServiceCoverageRatio": 2.41,
+      "liquidReserves": 95000
+    },
+    "employment": {
+      "type": "Independent Contractor / Digital Freelancer",
+      "employerOrBusiness": "Studio Ananya Creative",
+      "industrySector": "UI/UX & Digital Media",
+      "vintageYears": 2.0,
+      "verificationStatus": "Bank UPI & NEFT invoice deposits verified; thin credit bureau file"
+    },
+    "creditHistory": {
+      "bureauBand": "Thin File / New to Credit (Score: 685)",
+      "onTimePaymentPct": 100,
+      "delinquencies24m": 0,
+      "revolvingUtilizationPct": 8.0,
+      "activeCreditLines": 1,
+      "oldestAccountAgeYears": 1.2
+    },
+    "assessment": {
+      "modelTier": "Tier 2 — Low Risk but Credit File Uncertainty",
+      "repaymentCapacity": "Strong: Zero existing monthly debt. Monthly surplus of ₹22,000 easily supports proposed EMI of ₹9,114.",
+      "riskIndicators": "Thin Credit Bureau File: Only 1 active credit line (secured credit card) for 14 months.",
+      "evidenceCompleteness": "Adequate: 6-month primary bank statement cross-verified against invoice contracts.",
+      "assessmentUncertainty": "Moderate: Absence of long credit bureau track record should not be penalised as bad credit under fair lending rules.",
+      "positiveFactors": [
+        {
+          "title": "Zero Existing Debt Obligations",
+          "detail": "100% of net monthly cash flow surplus is unencumbered by prior borrowings.",
+          "impact": "Positive"
+        },
+        {
+          "title": "Healthy Debt Service Coverage (2.41x)",
+          "detail": "Monthly surplus of ₹22,000 exceeds proposed ₹9,114 EMI with ample safety margin.",
+          "impact": "Positive"
+        }
+      ],
+      "riskFactors": [
+        {
+          "title": "Limited Formal Bureau History",
+          "detail": "Bureau file is 14 months old; underwriter fair lending check applied to prevent bias.",
+          "severity": "Low"
+        }
+      ],
+      "plainLanguageExplanation": "Ananya is young and has a thin credit history, but her verified bank deposits and client contracts show a steady surplus of ₹22,000/month with zero existing debt. Her requested loan EMI of ₹9,114 is very affordable."
+    },
+    "decisionHistory": null
+  },
+  {
+    "id": "APP-2026-0882",
+    "applicantName": "Vikram Malhotra",
+    "applicantInitials": "VM",
+    "applicantType": "Salaried Manager",
+    "requestedAmount": 600000,
+    "annualInterestRate": 13.5,
+    "purpose": "Debt Consolidation & Credit Card Balance Payoff",
+    "tenureMonths": 36,
+    "submissionDate": "2026-10-19",
+    "lastUpdated": "2026-10-23 16:45",
+    "status": "Further Review Required",
+    "reviewStatus": "Further Review Required",
+    "evidenceCompleteness": "High (88%)",
+    "assignedReviewer": "David Vance (Senior Underwriter)",
+    "profileArchetype": "Borrower with high existing debt",
+    "financials": {
+      "grossMonthlyIncome": 98000,
+      "netMonthlyInflow": 76000,
+      "monthlyLivingExpenses": 38000,
+      "existingDebtObligations": 36000,
+      "calculatedDti": 57.5,
+      "netDiscretionaryCashflow": 2000,
+      "debtServiceCoverageRatio": 0.10,
+      "liquidReserves": 45000
+    },
+    "employment": {
+      "type": "Full-Time Salaried (Operations Lead)",
+      "employerOrBusiness": "Nexus Supply Chain Solutions",
+      "industrySector": "Logistics & Fleet",
+      "vintageYears": 4.8,
+      "verificationStatus": "Salary slips and Form 16 verified"
+    },
+    "creditHistory": {
+      "bureauBand": "Fair (658)",
+      "onTimePaymentPct": 94.2,
+      "delinquencies24m": 1,
+      "revolvingUtilizationPct": 78.4,
+      "activeCreditLines": 7,
+      "oldestAccountAgeYears": 6
+    },
+    "assessment": {
+      "modelTier": "Tier 3 — High Debt Burden / Consolidation Dependent",
+      "repaymentCapacity": "Currently Critical: DTI is 57.5% with ₹36,000 in existing EMIs, leaving only ₹2,000 buffer. Proposed EMI of ₹20,363 cannot be serviced unless existing high-rate debts are directly paid off.",
+      "riskIndicators": "Strained Leverage: 78% credit card utilization across 4 revolving lines.",
+      "evidenceCompleteness": "High: All loan account statements and credit card bills submitted.",
+      "assessmentUncertainty": "Low: Exact debt service obligations are fully accounted for.",
+      "positiveFactors": [
+        {
+          "title": "Consolidation Interest Savings Opportunity",
+          "detail": "Consolidating 36% credit card interest into 13.5% loan would save ₹14,000/month in finance charges.",
+          "impact": "Positive"
+        }
+      ],
+      "riskFactors": [
+        {
+          "title": "Severe Current DTI (57.5%)",
+          "detail": "Without direct balance payoff disbursement, adding this loan would cause cash insolvency.",
+          "severity": "High"
+        }
+      ],
+      "plainLanguageExplanation": "Vikram is currently overleveraged, spending ₹36,000/month on high-interest credit cards and personal loans. Approving this loan is ONLY safe if the bank directly disburses funds to close the credit card accounts, which would immediately cut his monthly payments by ₹14,000."
+    },
+    "decisionHistory": null
+  },
+  {
+    "id": "APP-2026-0879",
+    "applicantName": "Neha Verma",
+    "applicantInitials": "NV",
+    "applicantType": "Professional Services Partner",
+    "requestedAmount": 350000,
+    "annualInterestRate": 11.0,
+    "purpose": "Consulting Office Lease Deposit & IT Fitment",
+    "tenureMonths": 24,
+    "submissionDate": "2026-10-20",
+    "lastUpdated": "2026-10-24 14:00",
+    "status": "Missing Information",
+    "reviewStatus": "Missing Information",
+    "evidenceCompleteness": "Incomplete (45%)",
+    "assignedReviewer": "David Vance (Senior Underwriter)",
+    "profileArchetype": "Borrower with missing financial documents",
+    "financials": {
+      "grossMonthlyIncome": 75000,
+      "netMonthlyInflow": 58000,
+      "monthlyLivingExpenses": 32000,
+      "existingDebtObligations": 8500,
+      "calculatedDti": 33.1,
+      "netDiscretionaryCashflow": 17500,
+      "debtServiceCoverageRatio": 1.07,
+      "liquidReserves": 80000
+    },
+    "employment": {
+      "type": "Firm Partner / Legal Consultant",
+      "employerOrBusiness": "Verma Legal Advisory Associates",
+      "industrySector": "Corporate Legal Services",
+      "vintageYears": 2.5,
+      "verificationStatus": "Bar Council enrollment verified; Q3 GST return & ITR acknowledgement missing"
+    },
+    "creditHistory": {
+      "bureauBand": "Good (732)",
+      "onTimePaymentPct": 98.0,
+      "delinquencies24m": 0,
+      "revolvingUtilizationPct": 26.5,
+      "activeCreditLines": 3,
+      "oldestAccountAgeYears": 5
+    },
+    "assessment": {
+      "modelTier": "Tier 3 — Information Incomplete",
+      "repaymentCapacity": "Indicative: Stated surplus of ₹17,500 would support ₹16,316 EMI, but revenue is not fully substantiated.",
+      "riskIndicators": "Documentation Gap: FY25 ITR computation and Q3 GST filings are not yet uploaded.",
+      "evidenceCompleteness": "Deficient: Only 3 months of bank statements provided; 6 months required by policy.",
+      "assessmentUncertainty": "High: Missing documents denote uncertainty, not proof of inability to repay. Verification required.",
+      "positiveFactors": [
+        {
+          "title": "Clean Historical Bureau Performance",
+          "detail": "Zero late payments across 5 years of borrowing.",
+          "impact": "Positive"
+        }
+      ],
+      "riskFactors": [
+        {
+          "title": "Missing Statutory Tax Exhibits",
+          "detail": "Q3 GST filings and firm partnership deed pending applicant submission.",
+          "severity": "Moderate"
+        }
+      ],
+      "plainLanguageExplanation": "Neha's stated income and clean credit bureau record look promising, but critical statutory tax filings and the last 3 months of bank statements are missing. We must request these documents before rendering a final credit decision."
+    },
+    "decisionHistory": null
+  },
+  {
+    "id": "APP-2026-0875",
+    "applicantName": "Amit Kumar",
+    "applicantInitials": "AK",
+    "applicantType": "Salaried Executive",
+    "requestedAmount": 400000,
+    "annualInterestRate": 11.5,
+    "purpose": "Medical Emergency & Family Relocation",
+    "tenureMonths": 36,
+    "submissionDate": "2026-10-18",
+    "lastUpdated": "2026-10-23 15:10",
+    "status": "Verification Required",
+    "reviewStatus": "Verification Required",
+    "evidenceCompleteness": "Discrepancy (58%)",
+    "assignedReviewer": "David Vance (Senior Underwriter)",
+    "profileArchetype": "Borrower with inconsistent declared and evidence-supported income",
+    "financials": {
+      "grossMonthlyIncome": 70000,
+      "netMonthlyInflow": 48000,
+      "monthlyLivingExpenses": 29000,
+      "existingDebtObligations": 9000,
+      "calculatedDti": 31.7,
+      "netDiscretionaryCashflow": 10000,
+      "debtServiceCoverageRatio": 0.76,
+      "liquidReserves": 65000
+    },
+    "employment": {
+      "type": "Full-Time Salaried (Marketing Manager)",
+      "employerOrBusiness": "Aegis Digital Media Agency",
+      "industrySector": "Marketing & Public Relations",
+      "vintageYears": 3.2,
+      "verificationStatus": "Declared ₹70,000 monthly; bank credits verify only ₹48,000 average (discrepancy ₹22,000)"
+    },
+    "creditHistory": {
+      "bureauBand": "Good (715)",
+      "onTimePaymentPct": 97.5,
+      "delinquencies24m": 0,
+      "revolvingUtilizationPct": 32.0,
+      "activeCreditLines": 4,
+      "oldestAccountAgeYears": 5
+    },
+    "assessment": {
+      "modelTier": "Tier 3 — Cashflow Discrepancy Flagged",
+      "repaymentCapacity": "Inconsistent: Based on verified inflow of ₹48,000, net surplus is only ₹10,000, which cannot safely service the ₹13,197 EMI (0.76x DSCR).",
+      "riskIndicators": "Income Discrepancy: ₹22,000 difference between self-reported income (₹70,000) and verified bank credits (₹48,000).",
+      "evidenceCompleteness": "Under Review: Bank statements show ₹48,000 base salary; variable incentives not reflected in credits.",
+      "assessmentUncertainty": "High: Clarification required to determine if variable performance incentives account for the ₹22,000 difference.",
+      "positiveFactors": [
+        {
+          "title": "Consistent Employment Vintage",
+          "detail": "Over 3 years at current marketing agency with verifiable employer registration.",
+          "impact": "Positive"
+        }
+      ],
+      "riskFactors": [
+        {
+          "title": "Substantial Income Discrepancy (-₹22,000)",
+          "detail": "Evidence-supported inflow of ₹48,000 leaves inadequate buffer for requested ₹4,00,000 loan.",
+          "severity": "High"
+        }
+      ],
+      "plainLanguageExplanation": "Amit self-reported a monthly income of ₹70,000, but his submitted bank statements show salary deposits averaging ₹48,000. Under fair lending practices, we do not treat this as fraud—it may be quarterly bonuses—but we must clarify this discrepancy before we can approve."
+    },
+    "decisionHistory": null
+  },
+  {
+    "id": "APP-2026-0870",
+    "applicantName": "Sunita Rao",
+    "applicantInitials": "SR",
+    "applicantType": "Boutique Healthcare Clinic Owner",
+    "requestedAmount": 1200000,
+    "annualInterestRate": 12.5,
+    "purpose": "Diagnostic Imaging Machine Purchase",
+    "tenureMonths": 36,
+    "submissionDate": "2026-10-17",
+    "lastUpdated": "2026-10-24 16:30",
+    "status": "Ready for Review",
+    "reviewStatus": "Ready for Review",
+    "evidenceCompleteness": "High (90%)",
+    "assignedReviewer": "David Vance (Senior Underwriter)",
+    "profileArchetype": "Borrower whose requested loan is unaffordable but a smaller loan is manageable",
+    "financials": {
+      "grossMonthlyIncome": 110000,
+      "netMonthlyInflow": 85000,
+      "monthlyLivingExpenses": 40000,
+      "existingDebtObligations": 18000,
+      "calculatedDti": 52.8,
+      "netDiscretionaryCashflow": 27000,
+      "debtServiceCoverageRatio": 0.67,
+      "liquidReserves": 220000
+    },
+    "employment": {
+      "type": "Healthcare Practitioner / Clinic Proprietor",
+      "employerOrBusiness": "Aarogya Physiotherapy & Wellness",
+      "industrySector": "Allied Healthcare Services",
+      "vintageYears": 4.0,
+      "verificationStatus": "Clinical registration and 12-month bank inflows verified"
+    },
+    "creditHistory": {
+      "bureauBand": "Very Good (748)",
+      "onTimePaymentPct": 99.0,
+      "delinquencies24m": 0,
+      "revolvingUtilizationPct": 22.0,
+      "activeCreditLines": 4,
+      "oldestAccountAgeYears": 7
+    },
+    "assessment": {
+      "modelTier": "Tier 2 — Counterfactual Structuring Required",
+      "repaymentCapacity": "Deficit at ₹12,00,000 (EMI ₹40,140 vs surplus ₹27,000 = 0.67x DSCR). Manageable at ₹6,00,000 (EMI ₹20,070 vs surplus ₹27,000 = 1.35x DSCR).",
+      "riskIndicators": "Excessive requested principal relative to liquid reserves and clinic operating margins.",
+      "evidenceCompleteness": "High: Full bank statements, vendor equipment quotation, and clinic lease verified.",
+      "assessmentUncertainty": "Low: Verified cashflows accurately reflect clinic revenues.",
+      "positiveFactors": [
+        {
+          "title": "Strong Professional Qualifications & Clean Bureau",
+          "detail": "Score of 748 with zero late payments over 7 years.",
+          "impact": "Positive"
+        },
+        {
+          "title": "Resilient Health Sector Demand",
+          "detail": "Steady patient billing averaging ₹85,000 net monthly.",
+          "impact": "Positive"
+        }
+      ],
+      "riskFactors": [
+        {
+          "title": "Principal Over-Borrowing at ₹12,00,000",
+          "detail": "Requested installment absorbs 148% of available monthly surplus.",
+          "severity": "High"
+        }
+      ],
+      "plainLanguageExplanation": "Sunita is an experienced physiotherapist with an excellent credit record. However, her requested loan of ₹12,00,000 requires a ₹40,140 monthly payment, which exceeds her ₹27,000 surplus. A counterfactual structure of ₹6,00,000 or ₹7,00,000 would result in an affordable ₹20,070 payment."
+    },
+    "decisionHistory": null
+  },
+  {
+    "id": "APP-2026-0865",
+    "applicantName": "Manoj Joshi",
+    "applicantInitials": "MJ",
+    "applicantType": "Individual Salaried",
+    "requestedAmount": 450000,
+    "annualInterestRate": 14.0,
+    "purpose": "Personal Unspecified Expenses",
+    "tenureMonths": 24,
+    "submissionDate": "2026-10-15",
+    "lastUpdated": "2026-10-16 11:45",
+    "status": "Completed Decisions",
+    "reviewStatus": "Completed Decisions",
+    "evidenceCompleteness": "Complete (92%)",
+    "assignedReviewer": "E. Thorne (Senior Underwriter ID #109)",
+    "profileArchetype": "Borrower with a recorded rejection and a documented reason",
+    "financials": {
+      "grossMonthlyIncome": 42000,
+      "netMonthlyInflow": 34000,
+      "monthlyLivingExpenses": 24000,
+      "existingDebtObligations": 19000,
+      "calculatedDti": 63.8,
+      "netDiscretionaryCashflow": -9000,
+      "debtServiceCoverageRatio": -0.42,
+      "liquidReserves": 15000
+    },
+    "employment": {
+      "type": "Salaried Staff",
+      "employerOrBusiness": "Om Logistics Depots",
+      "industrySector": "Transport & Logistics",
+      "vintageYears": 1.4,
+      "verificationStatus": "Bank statements confirm recurring salary, but also 3 overdraft charges"
+    },
+    "creditHistory": {
+      "bureauBand": "Subprime (598)",
+      "onTimePaymentPct": 86.5,
+      "delinquencies24m": 3,
+      "revolvingUtilizationPct": 91.5,
+      "activeCreditLines": 5,
+      "oldestAccountAgeYears": 4
+    },
+    "assessment": {
+      "modelTier": "Tier 4 — Severe Affordability Risk",
+      "repaymentCapacity": "Negative: Existing debt payments (₹19,000) and essential living (₹24,000) exceed net income (₹34,000) by ₹9,000 monthly.",
+      "riskIndicators": "Severe Cash Deficit: 3 recorded delinquencies in past 18 months, maxed-out credit cards (91.5%).",
+      "evidenceCompleteness": "Complete: Financial documentation is complete and confirms immediate insolvency risk.",
+      "assessmentUncertainty": "None: High confidence based on 3 cross-validated bank statements.",
+      "positiveFactors": [],
+      "riskFactors": [
+        {
+          "title": "Negative Discretionary Cash Flow (-₹9,000)",
+          "detail": "Applicant is currently incurring new debt to service existing EMIs.",
+          "severity": "High"
+        },
+        {
+          "title": "Delinquency Record & Over-Limit Cards",
+          "detail": "Credit utilization at 91.5% with multiple recent late payments.",
+          "severity": "High"
+        }
+      ],
+      "plainLanguageExplanation": "Manoj currently has more monthly debt payments and living costs than his verified income, resulting in a deficit of -₹9,000 every month. Under fair lending and responsible banking guidelines, issuing an additional ₹4,500,000 loan would cause immediate default and financial hardship."
+    },
+    "decisionHistory": {
+      "decision": "Rejected",
+      "officer": "E. Thorne (Senior Underwriter ID #109)",
+      "timestamp": "2026-10-16 11:45",
+      "reason": "Affordability threshold breached: Net monthly cash flow is negative (-₹9,000/mo) prior to proposed loan. Adding ₹21,607 EMI would severely compound debt distress. Adverse action issued per CreditLens Lending Standard Rule 4.2.",
+      "approvedAmount": 0,
+      "approvedTenure": 0,
+      "conditions": "Applicant provided with free debt counseling contact information per fair banking mandate."
+    }
+  }
+]

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#757682", "tertiary-container": "#653400", "inverse-on-surface": "#eef0ff", "outline-variant": "#c5c5d3", "on-background": "#131b2e", "on-primary-container": "#90a8ff", "primary": "#00236f", "on-secondary": "#ffffff", "surface-bright": "#faf8ff", "tertiary": "#442100", "primary-fixed-dim": "#b6c4ff", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#6e3900", "secondary": "#006a63", "on-surface-variant": "#444651", "on-secondary-fixed": "#00201d", "inverse-surface": "#283044", "tertiary-fixed-dim": "#ffb77d", "surface-container-highest": "#dae2fd", "surface-container-low": "#f2f3ff", "primary-fixed": "#dce1ff", "surface-container": "#eaedff", "error": "#ba1a1a", "error-container": "#ffdad6", "on-secondary-container": "#006f67", "on-primary-fixed": "#00164e", "on-surface": "#131b2e", "background": "#faf8ff", "on-tertiary-container": "#fc922b", "surface-variant": "#dae2fd", "on-secondary-fixed-variant": "#00504a", "primary-container": "#1e3a8a", "surface-container-high": "#e2e7ff", "secondary-container": "#99efe5", "inverse-primary": "#b6c4ff", "on-error-container": "#93000a", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "tertiary-fixed": "#ffdcc3", "secondary-fixed-dim": "#80d5cb", "surface-dim": "#d2d9f4", "surface": "#faf8ff", "on-primary-fixed-variant": "#264191", "surface-tint": "#4059aa", "on-tertiary-fixed": "#2f1500", "surface-container-lowest": "#ffffff", "secondary-fixed": "#9cf2e8" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "margin": "2rem", "space-xl": "2.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "body-lg": ["Inter"], "label-md": ["Inter"], "display-lg-mobile": ["Inter"], "body-md": ["Inter"], "display-lg": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"], "headline-lg-mobile": ["Inter"], "title-md": ["Inter"], "label-sm": ["Inter"], "metric-xl-mobile": ["Inter"], "title-sm": ["Inter"], "metric-xl": ["Inter"], "headline-md": ["Inter"], "headline-sm": ["Inter"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "metric-xl-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "metric-xl": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md flex flex-col"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-surface-container-lowest text-[18px]">insights</span></div><span class="font-title-md text-title-md font-semibold text-primary tracking-tight">CreditLens</span></div><span class="font-label-sm text-label-sm text-on-surface-variant mt-space-xs uppercase tracking-wider">See Your Credit Clearly</span></div><nav class="flex flex-col gap-space-xs px-space-sm mt-space-sm" data-active-classes="bg-surface-container-high text-primary font-semibold"><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm rounded-lg transition-colors bg-surface-container-high text-primary font-semibold" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-title-sm text-title-sm">Dashboard</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="loan-application" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">assignment_add</span><span class="font-title-sm text-title-sm">Loan Application</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-medium">New</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="financial-profile" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="font-title-sm text-title-sm">Financial Profile</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="my-assessment" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-title-sm text-title-sm">My Assessment</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-medium">Live</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="loan-simulator" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-title-sm text-title-sm">Loan Simulator</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-title-sm text-title-sm">Settings</span></div></a></nav></div><div class="p-space-md m-space-sm rounded-xl bg-surface-container-low flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Security &amp; Audit</span><span class="w-2 h-2 rounded-full bg-secondary"></span></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[15px] text-secondary">lock</span><span class="font-label-sm text-label-sm">256-Bit Encrypted Data</span></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[15px] text-primary">verified_user</span><span class="font-label-sm text-label-sm">FCRA &amp; ECOA Compliant</span></div><div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><a class="hover:text-primary transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[14px]">help</span> Help</a><a class="hover:text-error transition-colors flex items-center gap-1" data-path="login" href="#"><span class="material-symbols-outlined text-[14px]">logout</span> Logout</a></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 z-40 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface-variant">Underwriting Portal</span><span class="text-outline-variant font-label-sm text-label-sm">/</span><span class="font-title-sm text-title-sm font-semibold text-on-surface">Institutional Review</span></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-on-secondary-container font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span>Plaid Active • Oct 24</span></div><div class="relative flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute -top-0.5 -right-0.5 w-2 h-2 bg-error rounded-full"></span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-title-sm text-title-sm text-on-surface font-semibold leading-tight">Elena Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">ID: CL-84091 • <span class="text-secondary font-semibold">Tier A-2 Prime</span></span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface flex-1 px-space-xl py-space-xl"><div class="flex flex-col w-full">
+<!-- Top Greeting & Real-Time Sync Utility Bar -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-md text-headline-md font-semibold text-on-surface tracking-tight">Welcome back, Elena</h1>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+            KYC Verified
+          </span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">sync</span>
+            Underwriting models refreshed 14 minutes ago
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Institutional Solvency Framework • Autonomous Fair-Lending Protocol V4.2 • Plaid ID: <span class="font-semibold text-on-surface">us-east-9122</span></p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-2 px-space-md py-space-xs rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">gavel</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Algorithmic Fair Index</span>
+<span class="font-title-sm text-title-sm font-semibold text-secondary">99.4% Impartial</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-space-md py-space-xs rounded-lg bg-surface-container-low text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Data Ingestion</span>
+<span class="font-title-sm text-title-sm font-semibold text-primary">Plaid Feed: Live Real-Time</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4 Core Pillars of Financial Health -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Pillar 1: Monthly Net Income -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Monthly Net Income</span>
+<span class="w-7 h-7 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-metric-xl text-metric-xl text-on-surface tracking-tight font-bold">$6,450.00</div>
+<div class="flex items-center gap-1 mt-1 text-secondary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+4.2% YoY</span>
+<span class="text-on-surface-variant font-normal text-body-sm font-body-sm pl-1">• ADP Payroll Sync</span>
+</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 82%;"></div>
+</div>
+<div class="flex justify-between items-center pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Stability Score</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">98 / 100</span>
+</div>
+</div>
+<!-- Pillar 2: Monthly Living Expenses -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Monthly Living Expenses</span>
+<span class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-metric-xl text-metric-xl text-on-surface tracking-tight font-bold">$3,820.00</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span>Rent $2.1k</span> • <span>Util $420</span> • <span>Disc $1.3k</span>
+</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden flex">
+<div class="bg-primary-container h-full" style="width: 55%;" title="Rent"></div>
+<div class="bg-outline h-full" style="width: 11%;" title="Utilities"></div>
+<div class="bg-surface-tint h-full" style="width: 34%;" title="Discretionary"></div>
+</div>
+<div class="flex justify-between items-center pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Income Consumed</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">59.2% Nominal</span>
+</div>
+</div>
+<!-- Pillar 3: Debt Obligations -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Debt Obligations</span>
+<span class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-metric-xl text-metric-xl text-on-surface tracking-tight font-bold">$780.00<span class="text-title-sm font-title-sm font-normal text-on-surface-variant">/mo</span></div>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-semibold text-secondary">DTI: 12.1%</span>
+<span>• Auto $380, Student $400</span>
+</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 24%;"></div>
+</div>
+<div class="flex justify-between items-center pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Max Recommended DTI</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">36% (Ultra-Safe)</span>
+</div>
+</div>
+<!-- Pillar 4: Repayment Buffer Surplus (Prominent Badge) -->
+<div class="bg-primary rounded-xl p-space-md shadow-md text-on-primary flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-on-primary/5 pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider font-semibold">Repayment Buffer Surplus</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Prime Tier</span>
+</div>
+<div class="my-space-sm relative z-10">
+<div class="font-metric-xl text-metric-xl text-on-primary tracking-tight font-bold">$1,850.00</div>
+<div class="font-body-sm text-body-sm text-primary-fixed-dim mt-1 flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">verified</span>
+<span>28.7% Net Cash Surplus</span>
+</div>
+</div>
+<div class="w-full bg-on-primary/20 rounded-full h-1.5 overflow-hidden relative z-10">
+<div class="bg-secondary-fixed h-full rounded-full" style="width: 72%;"></div>
+</div>
+<div class="flex justify-between items-center pt-2 relative z-10">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Capacity Class</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-semibold">Tier A-2 Institutional</span>
+</div>
+</div>
+</div>
+<!-- Active Application Pipeline Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg mb-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-md gap-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">real_estate_agent</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-title-md text-title-md font-bold text-on-surface tracking-tight">$25,000 Home Improvement Loan</h2>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">Dossier #CL-8924</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Underwriting Engine: Solvency-Optima Institutional Core • Requested 36-Month Term</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Status: Under Institutional Review
+        </span>
+<button class="px-space-md py-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg font-title-sm text-title-sm transition-colors" type="button">
+          Audit Ledger
+        </button>
+</div>
+</div>
+<!-- 4-Stage Visual Timeline Tracker -->
+<div class="relative pt-space-sm">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md relative z-10">
+<!-- Stage 1: Submitted -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">Stage 01</span>
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+</div>
+<span class="font-title-sm text-title-sm font-semibold text-on-surface">Application Submitted</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Direct Plaid Link authenticated</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-space-sm">Completed • Oct 20</span>
+</div>
+<!-- Stage 2: AI Audit -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">Stage 02</span>
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+</div>
+<span class="font-title-sm text-title-sm font-semibold text-on-surface">Explainable AI Audit</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Zero protected-class demographic bias</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-space-sm">Passed Zero-Bias Audit</span>
+</div>
+<!-- Stage 3: Verification (Active Action Required) -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between relative shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Stage 03 • In Progress</span>
+<span class="w-6 h-6 rounded-full bg-tertiary-container text-tertiary-fixed flex items-center justify-center animate-pulse">
+<span class="material-symbols-outlined text-[14px]">priority_high</span>
+</span>
+</div>
+<span class="font-title-sm text-title-sm font-bold text-on-surface">Verification Review</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">1 Action Pending: Freelance 1099 verification</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold mt-space-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Action Required
+          </span>
+</div>
+<!-- Stage 4: Final Offer -->
+<div class="bg-surface-container-low opacity-75 rounded-xl p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">Stage 04</span>
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+</span>
+</div>
+<span class="font-title-sm text-title-sm font-semibold text-on-surface">Underwriter Final Offer</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Terms, rate schedule &amp; e-sign disbursement</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-space-sm">Estimated 24-48h</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main 2-Column Responsive Workspace Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column (8 Columns: Telemetry, Cash Flow & Explainability) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Action Required Banner (Amber Warning) -->
+<div class="w-full bg-tertiary-fixed rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">description</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm font-bold text-on-tertiary-fixed">Supplemental Income Optimization</span>
+<span class="font-body-sm text-body-sm text-on-tertiary-fixed-variant">Verify freelance 1099 statement to unlock <strong class="text-on-tertiary-fixed">+$8,000 additional borrowing capacity</strong> and reduce APR by 45 bps.</span>
+</div>
+</div>
+<button class="shrink-0 px-space-md py-2 rounded-lg bg-primary text-on-primary font-title-sm text-title-sm font-semibold shadow hover:bg-primary-container transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">file_upload</span>
+          Submit 1099 Form
+        </button>
+</div>
+<!-- Financial Income-vs-Expenses Cash Flow Ledger & Rhythm Chart -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-space-lg">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">waterfall_chart</span>
+<h2 class="font-title-md text-title-md font-bold text-on-surface tracking-tight">12-Month Net Cash Flow Cushion</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Verified institutional distribution: Income (Navy) vs Living + Debt (Light Blue), showing rolling net reserve.</p>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Net Inflow</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-surface-tint"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Outflow</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Free Buffer</span>
+</div>
+</div>
+</div>
+<!-- Inline SVG Visualization Chart (Rhythm Bar Distribution) -->
+<div class="w-full h-56 bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
+<div class="w-full h-40 flex items-end justify-between gap-1.5 sm:gap-3 px-2 pt-2">
+<!-- Nov -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end group cursor-pointer">
+<div class="w-full flex items-end gap-0.5 justify-center h-full">
+<div class="w-2.5 bg-primary rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 75%;"></div>
+<div class="w-2.5 bg-surface-tint rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 52%;"></div>
+<div class="w-2 bg-secondary rounded-t-sm opacity-90" style="height: 23%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nov</span>
+</div>
+<!-- Dec -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end group cursor-pointer">
+<div class="w-full flex items-end gap-0.5 justify-center h-full">
+<div class="w-2.5 bg-primary rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 85%;"></div>
+<div class="w-2.5 bg-surface-tint rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 60%;"></div>
+<div class="w-2 bg-secondary rounded-t-sm opacity-90" style="height: 25%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dec</span>
+</div>
+<!-- Jan -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end group cursor-pointer">
+<div class="w-full flex items-end gap-0.5 justify-center h-full">
+<div class="w-2.5 bg-primary rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 78%;"></div>
+<div class="w-2.5 bg-surface-tint rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 54%;"></div>
+<div class="w-2 bg-secondary rounded-t-sm opacity-90" style="height: 24%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Jan</span>
+</div>
+<!-- Feb -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end group cursor-pointer">
+<div class="w-full flex items-end gap-0.5 justify-center h-full">
+<div class="w-2.5 bg-primary rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 78%;"></div>
+<div class="w-2.5 bg-surface-tint rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 53%;"></div>
+<div class="w-2 bg-secondary rounded-t-sm opacity-90" style="height: 25%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Feb</span>
+</div>
+<!-- Mar -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end group cursor-pointer">
+<div class="w-full flex items-end gap-0.5 justify-center h-full">
+<div class="w-2.5 bg-primary rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 80%;"></div>
+<div class="w-2.5 bg-surface-tint rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 52%;"></div>
+<div class="w-2 bg-secondary rounded-t-sm opacity-90" style="height: 28%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mar</span>
+</div>
+<!-- Apr -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end group cursor-pointer">
+<div class="w-full flex items-end gap-0.5 justify-center h-full">
+<div class="w-2.5 bg-primary rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 82%;"></div>
+<div class="w-2.5 bg-surface-tint rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 55%;"></div>
+<div class="w-2 bg-secondary rounded-t-sm opacity-90" style="height: 27%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Apr</span>
+</div>
+<!-- May -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end group cursor-pointer">
+<div class="w-full flex items-end gap-0.5 justify-center h-full">
+<div class="w-2.5 bg-primary rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 79%;"></div>
+<div class="w-2.5 bg-surface-tint rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 54%;"></div>
+<div class="w-2 bg-secondary rounded-t-sm opacity-90" style="height: 25%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">May</span>
+</div>
+<!-- Jun -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end group cursor-pointer">
+<div class="w-full flex items-end gap-0.5 justify-center h-full">
+<div class="w-2.5 bg-primary rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 84%;"></div>
+<div class="w-2.5 bg-surface-tint rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 53%;"></div>
+<div class="w-2 bg-secondary rounded-t-sm opacity-90" style="height: 31%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Jun</span>
+</div>
+<!-- Jul -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end group cursor-pointer">
+<div class="w-full flex items-end gap-0.5 justify-center h-full">
+<div class="w-2.5 bg-primary rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 81%;"></div>
+<div class="w-2.5 bg-surface-tint rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 52%;"></div>
+<div class="w-2 bg-secondary rounded-t-sm opacity-90" style="height: 29%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Jul</span>
+</div>
+<!-- Aug -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end group cursor-pointer">
+<div class="w-full flex items-end gap-0.5 justify-center h-full">
+<div class="w-2.5 bg-primary rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 83%;"></div>
+<div class="w-2.5 bg-surface-tint rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 51%;"></div>
+<div class="w-2 bg-secondary rounded-t-sm opacity-90" style="height: 32%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aug</span>
+</div>
+<!-- Sep -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end group cursor-pointer">
+<div class="w-full flex items-end gap-0.5 justify-center h-full">
+<div class="w-2.5 bg-primary rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 85%;"></div>
+<div class="w-2.5 bg-surface-tint rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 55%;"></div>
+<div class="w-2 bg-secondary rounded-t-sm opacity-90" style="height: 30%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sep</span>
+</div>
+<!-- Oct (Active) -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end group cursor-pointer">
+<div class="w-full flex items-end gap-0.5 justify-center h-full">
+<div class="w-2.5 bg-primary rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 90%;"></div>
+<div class="w-2.5 bg-surface-tint rounded-t-sm group-hover:opacity-80 transition-opacity" style="height: 57%;"></div>
+<div class="w-2 bg-secondary rounded-t-sm" style="height: 33%;"></div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary">Oct</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 px-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>Average Net Margin: <strong>+$1,784/mo</strong></span>
+<span>Rolling Volatility Coefficient: <strong>0.04 (Extremely Low)</strong></span>
+</div>
+</div>
+</div>
+<!-- Credit Assessment Summary Card with Radial Solvency Gauge -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col md:flex-row gap-space-lg items-center justify-between">
+<div class="flex items-center gap-space-lg shrink-0">
+<!-- Radial Solvency Gauge Graphic -->
+<div class="relative w-36 h-36 flex items-center justify-center">
+<svg class="w-36 h-36 transform -rotate-90" viewbox="0 0 120 120">
+<circle class="text-surface-container" cx="60" cy="60" fill="transparent" r="50" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-secondary" cx="60" cy="60" fill="transparent" r="50" stroke="currentColor" stroke-dasharray="314.159" stroke-dashoffset="65" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight leading-none">742</span>
+<span class="font-label-sm text-label-sm uppercase font-semibold text-secondary tracking-wider mt-1">Prime A-2</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Equitable Solvency Metric</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">Prime Institutional Grade</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-sm">
+              Solvency profile demonstrates strong payment stability with <strong class="text-on-surface font-semibold">8.4% revolving utilization</strong> and <strong class="text-on-surface font-semibold">4.2 months liquid buffer</strong>.
+            </p>
+</div>
+</div>
+<div class="flex flex-col sm:items-end w-full sm:w-auto gap-space-sm">
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+<span>Zero Adverse Records (36mo)</span>
+</div>
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded-lg bg-primary text-on-primary font-title-sm text-title-sm font-semibold hover:bg-primary-container shadow transition-all flex items-center justify-center gap-2" type="button">
+<span>View Full Explainable Assessment</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Column (4 Columns: Quick Actions, Ingestion Feed, Disclosures) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Quick Action Institutional Operations Panel -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-1">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">Institutional Actions</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Self-Service</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Action 1: New Loan -->
+<button class="w-full p-space-md rounded-xl bg-primary text-on-primary font-title-sm text-title-sm font-semibold hover:bg-primary-container transition-all flex items-center justify-between shadow" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-on-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">add_circle</span>
+</span>
+<span>Start New Loan Application</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">chevron_right</span>
+</button>
+<!-- Action 2: Simulator -->
+<button class="w-full p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm text-title-sm font-semibold transition-colors flex items-center justify-between" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</span>
+<span>Launch Loan Simulator</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">Scenario Calc</span>
+</button>
+<!-- Action 3: Document Upload (Pending indicator) -->
+<button class="w-full p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-title-sm text-title-sm font-semibold transition-colors flex items-center justify-between" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary">
+<span class="material-symbols-outlined text-[20px]">upload_file</span>
+</span>
+<div class="flex flex-col text-left">
+<span>Upload Financial Documents</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-medium">1 Pending Requirement</span>
+</div>
+</div>
+<span class="w-2 h-2 rounded-full bg-error"></span>
+</button>
+</div>
+</div>
+<!-- Real-Time Data Ingestion Telemetry Log -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">hub</span>
+<span class="font-title-sm text-title-sm font-bold text-on-surface">Data Ingestion Telemetry</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">Active Sync</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Log Item 1: Payroll -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">account_balance</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm font-semibold text-on-surface truncate">Payroll Direct Deposit</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">+$3,225.00</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Acme Health Corp • Confirmed via Plaid</span>
+<span class="font-label-sm text-label-sm text-outline-variant mt-1">Today • 08:30 AM EST</span>
+</div>
+</div>
+<!-- Log Item 2: Auto Loan Debit -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">directions_car</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm font-semibold text-on-surface truncate">Auto Loan Auto-Debit</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">-$380.00</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Ally Financial Servicing • On-Time Clean</span>
+<span class="font-label-sm text-label-sm text-outline-variant mt-1">Yesterday • 02:14 PM EST</span>
+</div>
+</div>
+<!-- Log Item 3: Bureau Telemetry Re-weighting -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">auto_graph</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm font-semibold text-on-surface truncate">Telemetry Re-Weighting</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">+6 Pts</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Revolving credit balance reduced below 10%</span>
+<span class="font-label-sm text-label-sm text-outline-variant mt-1">Oct 23 • Bureau Update</span>
+</div>
+</div>
+</div>
+<button class="w-full text-center py-1 text-primary font-title-sm text-title-sm hover:underline" type="button">
+          View 90-Day Full Ledger
+        </button>
+</div>
+<!-- Regulatory Transparency Notice (FCRA & ECOA Notice) -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">ECOA &amp; FCRA Algorithmic Guarantee</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          CreditLens models do not ingest prohibited demographics or protected proxy variables. All score adjustments are mathematically auditable under statutory federal criteria.
+        </p>
+<div class="pt-1 flex items-center justify-between">
+<a class="font-label-sm text-label-sm font-semibold text-primary hover:underline flex items-center gap-1" href="#">
+<span>View Audit Certificate</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<span class="font-label-sm text-label-sm text-outline font-mono">HASH: #8f92b7c4</span>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-md"><div class="w-full px-space-xl flex flex-col md:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 CreditLens Financial Technologies Inc. Equal Housing Opportunity. All decisions comply with the Fair Credit Reporting Act (15 U.S.C. § 1681) and Equal Credit Opportunity Act (12 CFR Part 1002).</p><div class="flex items-center gap-space-md"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">FCRA Disclosures</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Model Explainability Statement</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></div></div></footer></div></body></html>
