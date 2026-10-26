@@ -8,6 +8,11 @@ import {
   LogOut,
   ChevronDown,
   ShieldCheck,
+  LayoutDashboard,
+  Award,
+  Sparkles,
+  Printer,
+  MessageSquare,
   Compass,
   BookOpen,
   FileText,
@@ -45,7 +50,8 @@ export default function BorrowerNavbar() {
     { to: '/knowledge', label: 'Knowledge', icon: BookOpen },
     { to: '/loan', label: 'Loan', icon: FileText },
     { to: '/review', label: 'Review', icon: BarChart3 },
-    { to: '/other', label: 'Other', icon: HelpCircle }
+    { to: '/financial-xray', label: 'X-Ray', icon: Sparkles, badge: 'New' },
+    { to: '/ulas', label: 'ULAS Score', icon: Award }
   ];
 
   const getInitials = (name) => {
@@ -179,6 +185,20 @@ export default function BorrowerNavbar() {
               >
                 <Icon size={16} />
                 <span>{item.label}</span>
+                {item.badge && (
+                  <span
+                    style={{
+                      fontSize: '10px',
+                      fontWeight: '700',
+                      padding: '1px 5px',
+                      borderRadius: '4px',
+                      backgroundColor: '#0F766E',
+                      color: '#FFFFFF'
+                    }}
+                  >
+                    {item.badge}
+                  </span>
+                )}
               </NavLink>
             );
           })}
@@ -337,7 +357,73 @@ export default function BorrowerNavbar() {
                     onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
                   >
                     <User size={15} color="#0F766E" />
-                    <span>View Profile</span>
+                    <span>Profile &amp; Settings</span>
+                  </Link>
+
+                  <Link
+                    to="/ulas"
+                    onClick={() => setProfileOpen(false)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                      padding: '8px 10px',
+                      borderRadius: '6px',
+                      color: '#172B3A',
+                      fontSize: '13px',
+                      fontWeight: '500',
+                      textDecoration: 'none',
+                      transition: 'background-color 0.15s ease'
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#F1F4F8')}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
+                  >
+                    <Award size={15} color="#0F766E" />
+                    <span>ULAS Underwriting Score</span>
+                  </Link>
+
+                  <Link
+                    to="/reports"
+                    onClick={() => setProfileOpen(false)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                      padding: '8px 10px',
+                      borderRadius: '6px',
+                      color: '#172B3A',
+                      fontSize: '13px',
+                      fontWeight: '500',
+                      textDecoration: 'none',
+                      transition: 'background-color 0.15s ease'
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#F1F4F8')}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
+                  >
+                    <Printer size={15} color="#0F766E" />
+                    <span>Financial Dossier &amp; Reports</span>
+                  </Link>
+
+                  <Link
+                    to="/assistant"
+                    onClick={() => setProfileOpen(false)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                      padding: '8px 10px',
+                      borderRadius: '6px',
+                      color: '#172B3A',
+                      fontSize: '13px',
+                      fontWeight: '500',
+                      textDecoration: 'none',
+                      transition: 'background-color 0.15s ease'
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#F1F4F8')}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
+                  >
+                    <MessageSquare size={15} color="#0F766E" />
+                    <span>AI Finance Assistant</span>
                   </Link>
 
                   <div
@@ -443,9 +529,81 @@ export default function BorrowerNavbar() {
               >
                 <Icon size={18} />
                 <span>{item.label}</span>
+                {item.badge && (
+                  <span
+                    style={{
+                      fontSize: '10px',
+                      fontWeight: '700',
+                      padding: '1px 6px',
+                      borderRadius: '4px',
+                      backgroundColor: '#0F766E',
+                      color: '#FFFFFF',
+                      marginLeft: 'auto'
+                    }}
+                  >
+                    {item.badge}
+                  </span>
+                )}
               </NavLink>
             );
           })}
+          <NavLink
+            to="/ulas"
+            onClick={() => setMobileMenuOpen(false)}
+            style={({ isActive }) => ({
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px',
+              padding: '10px 14px',
+              borderRadius: '8px',
+              fontSize: '14px',
+              fontWeight: isActive ? '700' : '500',
+              color: isActive ? '#0F766E' : '#172B3A',
+              backgroundColor: isActive ? '#E6F4F1' : 'transparent',
+              textDecoration: 'none'
+            })}
+          >
+            <Award size={18} color="#0F766E" />
+            <span>ULAS Score</span>
+          </NavLink>
+          <NavLink
+            to="/reports"
+            onClick={() => setMobileMenuOpen(false)}
+            style={({ isActive }) => ({
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px',
+              padding: '10px 14px',
+              borderRadius: '8px',
+              fontSize: '14px',
+              fontWeight: isActive ? '700' : '500',
+              color: isActive ? '#0F766E' : '#172B3A',
+              backgroundColor: isActive ? '#E6F4F1' : 'transparent',
+              textDecoration: 'none'
+            })}
+          >
+            <Printer size={18} color="#0F766E" />
+            <span>Financial Reports</span>
+          </NavLink>
+          <NavLink
+            to="/assistant"
+            onClick={() => setMobileMenuOpen(false)}
+            style={({ isActive }) => ({
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px',
+              padding: '10px 14px',
+              borderRadius: '8px',
+              fontSize: '14px',
+              fontWeight: isActive ? '700' : '500',
+              color: isActive ? '#0F766E' : '#172B3A',
+              backgroundColor: isActive ? '#E6F4F1' : 'transparent',
+              textDecoration: 'none'
+            })}
+          >
+            <MessageSquare size={18} color="#0F766E" />
+            <span>AI Assistant</span>
+          </NavLink>
           <NavLink
             to="/profile"
             onClick={() => setMobileMenuOpen(false)}
@@ -463,7 +621,7 @@ export default function BorrowerNavbar() {
             })}
           >
             <User size={18} />
-            <span>Profile</span>
+            <span>Profile &amp; Settings</span>
           </NavLink>
         </div>
       )}

@@ -14,6 +14,10 @@ import LoanApplication from './pages/borrower/LoanApplication';
 import Review from './pages/borrower/Review';
 import Other from './pages/borrower/Other';
 import Profile from './pages/borrower/Profile';
+import ULASScoreView from './pages/borrower/ULASScoreView';
+import FinancialXRay from './pages/borrower/FinancialXRay';
+import FinancialReports from './pages/borrower/FinancialReports';
+import AIAssistant from './pages/borrower/AIAssistant';
 
 // Banker Portal
 import BankerPortal from './pages/banker/BankerPortal';
@@ -167,6 +171,46 @@ export default function App() {
               }
             />
             <Route
+              path="/overview"
+              element={
+                <ProtectedRoute allowedRole="borrower">
+                  <Home />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/ulas"
+              element={
+                <ProtectedRoute allowedRole="borrower">
+                  <ULASScoreView />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/financial-xray"
+              element={
+                <ProtectedRoute allowedRole="borrower">
+                  <FinancialXRay />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/reports"
+              element={
+                <ProtectedRoute allowedRole="borrower">
+                  <FinancialReports />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/assistant"
+              element={
+                <ProtectedRoute allowedRole="borrower">
+                  <AIAssistant />
+                </ProtectedRoute>
+              }
+            />
+            <Route
               path="/knowledge"
               element={
                 <ProtectedRoute allowedRole="borrower">
@@ -194,7 +238,7 @@ export default function App() {
               path="/other"
               element={
                 <ProtectedRoute allowedRole="borrower">
-                  <Other />
+                  <ULASScoreView />
                 </ProtectedRoute>
               }
             />

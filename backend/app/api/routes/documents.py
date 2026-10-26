@@ -68,15 +68,14 @@ async def upload_document(
     notes = extraction_res.get("notes", "")
 
     # Map input category string to canonical DocumentCategory
+    cat_lower = category.lower()
     declared_category = DocumentCategory.UNKNOWN
     for cat_enum in DocumentCategory:
-        if cat_enum.value.lower() == category.lower() or cat_enum.name.lower() == category.lower():
+        if cat_enum.value.lower() == cat_lower or cat_enum.name.lower() == cat_lower:
             declared_category = cat_enum
             break
     if declared_category == DocumentCategory.UNKNOWN and "statement" in cat_lower:
         declared_category = DocumentCategory.BANK_STATEMENT
-
-    cat_lower = category.lower()
     if "pan" in cat_lower:
         extracted_fields = verify_pan_content(extracted_text)
         if not extracted_fields.get("is_valid_format"):

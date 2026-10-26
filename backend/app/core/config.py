@@ -1,10 +1,12 @@
-"""
-CreditLens + ULAS Configuration Layer
-Centralized, validated, and versioned credit risk and lending policy configurations.
-"""
-
+import os
 from typing import Dict, Any, List
 from pydantic import BaseModel, Field
+from dotenv import load_dotenv
+
+# Automatically load environment variables from .env files
+load_dotenv()
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".env"))
 
 MODEL_VERSION = "ulas-0.2.0"
 POLICY_VERSION = "2026.1"
@@ -16,9 +18,31 @@ MAX_DOCUMENT_SIZE_BYTES = 15 * 1024 * 1024  # 15 MB
 ALLOWED_DOCUMENT_TYPES = ["application/pdf", "pdf"]
 STORAGE_DIRECTORY = "private_storage/documents"
 
-# Secret Key for Mock / JWT Tokens
-JWT_SECRET_KEY = "creditlens_prudential_underwriting_secret_key_2026"
-JWT_ALGORITHM = "HS256"
+# Secret Key for JWT Tokens
+JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "creditlens_prudential_underwriting_secret_key_2026")
+JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
+
+# MySQL Database Configurations
+DB_HOST = os.getenv("DB_HOST", "localhost")
+DB_PORT = int(os.getenv("DB_PORT", "3306"))
+DB_NAME = os.getenv("DB_NAME", "creditlens")
+DB_USERNAME = os.getenv("DB_USERNAME", "root")
+DB_PASSWORD = os.getenv("DB_PASSWORD", "")
+DATABASE_URL = os.getenv("DATABASE_URL", "")
+
+def get_database_url() -> str:
+    """Builds the MySQL database connection URL from environment variables."""
+    if DATABASE_URL:
+        return DATABASE_URL
+    if DB_PASSWORD:
+        return f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}?charset=utf8mb4"
+    return f"mysql+pymysql://{DB_USERNAME}@{DB_HOST}:{DB_PORT}/{DB_NAME}?charset=utf8mb4"
+
+def get_server_connection_url() -> str:
+    """Connection URL to MySQL server root (without database specified) to facilitate auto-creation."""
+    if DB_PASSWORD:
+        return f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/?charset=utf8mb4"
+    return f"mysql+pymysql://{DB_USERNAME}@{DB_HOST}:{DB_PORT}/?charset=utf8mb4"
 
 class PolicyGateConfig(BaseModel):
     name_match_threshold: float = 0.80           # G1: 80% minimum fuzzy name match

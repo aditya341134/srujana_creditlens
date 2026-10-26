@@ -3,6 +3,7 @@ ULAS — Universal Loan Acceptance Score Engine Schemas
 Defines canonical API response contracts, gates, sub-scores, and counterfactual simulation schemas.
 """
 
+from datetime import datetime
 from pydantic import BaseModel, Field
 from typing import Optional, List, Dict, Any
 
@@ -15,8 +16,8 @@ class GateResult(BaseModel):
 
 class SubscoreDetail(BaseModel):
     score: Optional[float] = None
-    status: str  # "AVAILABLE", "UNAVAILABLE"
-    weight: float
+    status: str = "AVAILABLE"  # "AVAILABLE", "UNAVAILABLE"
+    weight: float = 0.20
     description: Optional[str] = None
     input_features: Dict[str, Any] = Field(default_factory=dict)
     assumptions: Optional[str] = None
@@ -43,23 +44,23 @@ class NextActionItem(BaseModel):
     category: str
 
 class ULASResponse(BaseModel):
-    application_id: str
-    assessment_id: str
-    assessment_status: str  # "COMPLETED", "NEEDS_MANUAL_REVIEW", "INSUFFICIENT_DATA", "FAILED"
+    application_id: str = "APP-UNKNOWN"
+    assessment_id: str = "ASM-LEGACY"
+    assessment_status: str = "COMPLETED"  # "COMPLETED", "NEEDS_MANUAL_REVIEW", "INSUFFICIENT_DATA", "FAILED", "FAILED_POLICY_GATE"
     ulas: Optional[float] = None
     ulas_base: Optional[float] = None
     ulas_policy_adjusted: Optional[float] = None
-    band: str  # "A+", "A", "B", "C", "D", "E"
-    decision_recommendation: str  # "AUTOMATED_APPROVAL", "STANDARD_APPROVAL", "CONDITIONAL_APPROVAL", "MANUAL_REVIEW", "DECLINE_RECOMMENDED"
+    band: str = "C"  # "A+", "A", "B", "C", "D", "E"
+    decision_recommendation: str = "MANUAL_REVIEW"  # "AUTOMATED_APPROVAL", "STANDARD_APPROVAL", "CONDITIONAL_APPROVAL", "MANUAL_REVIEW", "DECLINE_RECOMMENDED"
     official_lender_decision: Optional[str] = None
     p_grant_estimate: Optional[float] = None
     p_default_12m: Optional[float] = None
     pd_model_status: str = "NOT_AVAILABLE"
-    confidence: float
+    confidence: float = 1.0
     calibration_status: str = "UNCALIBRATED"
     composite_r: Optional[float] = None
-    gates: Dict[str, GateResult]
-    subscores: Dict[str, SubscoreDetail]
+    gates: Dict[str, GateResult] = Field(default_factory=dict)
+    subscores: Dict[str, SubscoreDetail] = Field(default_factory=dict)
     drivers_positive: List[DriverItem] = Field(default_factory=list)
     drivers_negative: List[DriverItem] = Field(default_factory=list)
     reason_codes: List[ReasonCodeItem] = Field(default_factory=list)
@@ -70,7 +71,7 @@ class ULASResponse(BaseModel):
     policy_version: str = "2026.1"
     feature_schema_version: str = "1.0.0"
     calibration_version: Optional[str] = None
-    assessed_at: str
+    assessed_at: str = Field(default_factory=lambda: datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"))
 
 class SimulationRequest(BaseModel):
     principal: float = Field(..., gt=0)

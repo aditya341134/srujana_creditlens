@@ -17,7 +17,10 @@ import {
   User,
   Coins,
   Sparkles,
-  Info
+  Info,
+  Activity,
+  MessageSquare,
+  Printer
 } from 'lucide-react';
 import BorrowerLayout from '../../components/layout/BorrowerLayout';
 import { useAuth } from '../../context/AuthContext';
@@ -258,6 +261,200 @@ export default function Home() {
                 <span>RBI &amp; Fair Lending Compliant</span>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Core Intelligence Modules Grid */}
+        <section style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+          <div>
+            <h2 style={{ fontSize: '18px', fontWeight: '800', color: '#173B57', margin: '0 0 4px 0' }}>
+              Financial Intelligence &amp; Underwriting Engines
+            </h2>
+            <span style={{ fontSize: '13px', color: '#5B6B79' }}>
+              Explore your explainable score, cash-flow diagnostics, and conversational advisory.
+            </span>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '16px' }}>
+            {/* Card 1: ULAS */}
+            <Link
+              to="/ulas"
+              style={{
+                backgroundColor: '#FFFFFF',
+                borderRadius: '12px',
+                border: '1px solid #DCE3EA',
+                padding: '20px',
+                textDecoration: 'none',
+                color: 'inherit',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '10px',
+                boxShadow: '0 2px 6px rgba(23,43,58,0.03)',
+                transition: 'all 0.15s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = '#0F766E';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = '#DCE3EA';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div style={{ width: '36px', height: '36px', borderRadius: '8px', backgroundColor: '#E6F4F1', color: '#0F766E', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Award size={20} />
+                </div>
+                <span style={{ fontSize: '10px', fontWeight: '700', padding: '2px 8px', borderRadius: '10px', backgroundColor: '#E6F4F1', color: '#0F766E' }}>
+                  Flagship Score
+                </span>
+              </div>
+              <h3 style={{ fontSize: '16px', fontWeight: '800', color: '#173B57', margin: 0 }}>
+                ULAS Score Assessment
+              </h3>
+              <p style={{ fontSize: '12px', color: '#5B6B79', margin: 0, lineHeight: 1.5 }}>
+                Inspect your 0–100 explainable credit score evaluated across 5 transparent dimensions and 7 hard policy gates.
+              </p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', fontWeight: '700', color: '#0F766E', marginTop: 'auto' }}>
+                <span>View ULAS Breakdown</span>
+                <ArrowRight size={14} />
+              </div>
+            </Link>
+
+            {/* Card 2: AI Financial X-Ray */}
+            <Link
+              to="/financial-xray"
+              style={{
+                backgroundColor: '#FFFFFF',
+                borderRadius: '12px',
+                border: '1px solid #DCE3EA',
+                padding: '20px',
+                textDecoration: 'none',
+                color: 'inherit',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '10px',
+                boxShadow: '0 2px 6px rgba(23,43,58,0.03)',
+                transition: 'all 0.15s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = '#0F766E';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = '#DCE3EA';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div style={{ width: '36px', height: '36px', borderRadius: '8px', backgroundColor: '#E6F4F1', color: '#0F766E', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Activity size={20} />
+                </div>
+                <span style={{ fontSize: '10px', fontWeight: '700', padding: '2px 8px', borderRadius: '10px', backgroundColor: '#E6F4F1', color: '#0F766E' }}>
+                  Flagship Feature
+                </span>
+              </div>
+              <h3 style={{ fontSize: '16px', fontWeight: '800', color: '#173B57', margin: 0 }}>
+                AI Financial X-Ray
+              </h3>
+              <p style={{ fontSize: '12px', color: '#5B6B79', margin: 0, lineHeight: 1.5 }}>
+                Discover net cash-flow trends, declared vs. observed income reconciliation, and detect financial stress indicators.
+              </p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', fontWeight: '700', color: '#0F766E', marginTop: 'auto' }}>
+                <span>Open Financial X-Ray</span>
+                <ArrowRight size={14} />
+              </div>
+            </Link>
+
+            {/* Card 3: AI Finance Assistant */}
+            <Link
+              to="/assistant"
+              style={{
+                backgroundColor: '#FFFFFF',
+                borderRadius: '12px',
+                border: '1px solid #DCE3EA',
+                padding: '20px',
+                textDecoration: 'none',
+                color: 'inherit',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '10px',
+                boxShadow: '0 2px 6px rgba(23,43,58,0.03)',
+                transition: 'all 0.15s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = '#0F766E';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = '#DCE3EA';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div style={{ width: '36px', height: '36px', borderRadius: '8px', backgroundColor: '#E6F4F1', color: '#0F766E', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <MessageSquare size={20} />
+                </div>
+                <span style={{ fontSize: '10px', fontWeight: '700', padding: '2px 8px', borderRadius: '10px', backgroundColor: '#E6F4F1', color: '#0F766E' }}>
+                  Grounded AI
+                </span>
+              </div>
+              <h3 style={{ fontSize: '16px', fontWeight: '800', color: '#173B57', margin: 0 }}>
+                AI Finance Assistant
+              </h3>
+              <p style={{ fontSize: '12px', color: '#5B6B79', margin: 0, lineHeight: 1.5 }}>
+                Ask questions about your score, net cash flow, income anomalies, or credit bureau dispute letters.
+              </p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', fontWeight: '700', color: '#0F766E', marginTop: 'auto' }}>
+                <span>Chat with Assistant</span>
+                <ArrowRight size={14} />
+              </div>
+            </Link>
+
+            {/* Card 4: Financial Reports */}
+            <Link
+              to="/reports"
+              style={{
+                backgroundColor: '#FFFFFF',
+                borderRadius: '12px',
+                border: '1px solid #DCE3EA',
+                padding: '20px',
+                textDecoration: 'none',
+                color: 'inherit',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '10px',
+                boxShadow: '0 2px 6px rgba(23,43,58,0.03)',
+                transition: 'all 0.15s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = '#0F766E';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = '#DCE3EA';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div style={{ width: '36px', height: '36px', borderRadius: '8px', backgroundColor: '#E6F4F1', color: '#0F766E', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Printer size={20} />
+                </div>
+                <span style={{ fontSize: '10px', fontWeight: '700', padding: '2px 8px', borderRadius: '10px', backgroundColor: '#F1F4F8', color: '#5B6B79' }}>
+                  Printable PDF
+                </span>
+              </div>
+              <h3 style={{ fontSize: '16px', fontWeight: '800', color: '#173B57', margin: 0 }}>
+                Financial Reports
+              </h3>
+              <p style={{ fontSize: '12px', color: '#5B6B79', margin: 0, lineHeight: 1.5 }}>
+                Export an authoritative financial dossier with underwriting parameters and regulatory compliance audit events.
+              </p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', fontWeight: '700', color: '#0F766E', marginTop: 'auto' }}>
+                <span>Generate Dossier</span>
+                <ArrowRight size={14} />
+              </div>
+            </Link>
           </div>
         </section>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Layers, ShieldCheck, Lock, ExternalLink } from 'lucide-react';
 import BorrowerNavbar from './BorrowerNavbar';
+import { FloatingChatWidget } from '../FloatingChatWidget';
 
 export default function BorrowerLayout({ children }) {
   return (
@@ -28,6 +29,8 @@ export default function BorrowerLayout({ children }) {
       >
         {children}
       </main>
+
+      <FloatingChatWidget />
 
       {/* Accessible Footer identical to Banker Portal */}
       <footer

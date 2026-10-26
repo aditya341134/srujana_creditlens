@@ -3,7 +3,7 @@
  * Connects frontend directly to the FastAPI backend.
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
 
 function getAuthHeader() {
   const token = localStorage.getItem('creditlens_auth_token');
@@ -79,6 +79,7 @@ export const api = {
   // Assessment & ULAS Explainability
   getAssessment: (applicationId) => request(`/assessments/${applicationId}`),
   getUlasAssessment: (applicationId) => request(`/assessments/${applicationId}`),
+  getUlasHistory: (applicationId) => request(`/assessments/${applicationId}/history`),
   runUlasAssessment: (applicationId) =>
     request(`/assessments/${applicationId}/run`, { method: 'POST' }),
 
@@ -141,7 +142,46 @@ export const api = {
     request('/user/profile', {
       method: 'PUT',
       body: JSON.stringify(profileData)
-    })
+    }),
+
+  // AI Financial X-Ray & Bureau Reconciliation
+  getFinancialXRay: (scenario) => {
+    const query = scenario ? `?scenario=${scenario}` : '';
+    return request(`/financial-xray/current${query}`);
+  },
+
+  runFinancialXRay: (data = {}) =>
+    request('/financial-xray/analyze', {
+      method: 'POST',
+      body: JSON.stringify(data)
+    }),
+
+  loadDemoScenario: (scenarioId) =>
+    request(`/financial-xray/demo/${scenarioId}`, {
+      method: 'POST'
+    }),
+
+  generateDisputeLetter: (letterData) =>
+    request('/financial-xray/dispute-letter', {
+      method: 'POST',
+      body: JSON.stringify(letterData)
+    }),
+
+  // CreditLens AI Finance Assistant Chatbot
+  sendChatMessage: (message, scenarioContext = null) =>
+    request('/chat/message', {
+      method: 'POST',
+      body: JSON.stringify({ message, scenario_context: scenarioContext })
+    }),
+
+  getChatHistory: () => request('/chat/history'),
+
+  clearChatHistory: () =>
+    request('/chat/history', {
+      method: 'DELETE'
+    }),
+
+  getChatSuggestions: () => request('/chat/suggestions')
 };
 
 export default api;
